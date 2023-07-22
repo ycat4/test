@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/destyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Noto+Serif+JP:wght@200&family=WindSong&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=WindSong&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>wedding party invitation trial</title>
+        <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous"></script>
+        <script src="../試し/style.js"></script>
+        <script>
+            (window.onload = function() {
+              // フェードイン処理
+              jQuery(window).scroll(function (){
+                jQuery(".fade").each(function(){
+                  var winheight = jQuery(window).height();
+                  var posi = jQuery(this).offset().top;
+                  var scroll = jQuery(window).scrollTop();
+                  if (scroll + winheight > posi){
+                    jQuery(this).addClass("fadein");
+                  } else {
+                    //　スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+                    jQuery(this).removeClass("fadein");
+                  }
+                });
+               });
+            
+            })(); 
+            </script>
+            
+    </head>
+    <body>
+    <header>
+        <h1>
+            Wedding<br>
+            Invitation
+        </h1>
+        <p>
+        <div class="fade">
+            <img src="top.JPG" alt="TOP" class="contents">
+        </div>
+        </p>
+        <nav>
+            <ul>
+                <li><a href="#msgArea">Message</a></li>
+                <li><a href="#dtlArea">Details</a></li>
+                <li><a href="#formArea">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="znti">
+        <section id="msgArea">
+            <h2>MESSAGE</h2>
+            <p>
+            <div class="fade">
+                <img src="msg_s.JPG" alt="翔太メッセージ" class="contents">
+                <img src="msg_y.JPG" alt="柚花メッセージ" class="contents">
+            </div>
+            </p>
+        </section>
+        <section id="dtlArea">
+            <h2>DETAILS</h2>
+            <p>
+            <div class="fade">
+                <span class="sec">日にち　　2023年11月3日（金曜日）<br>
+                時　間　　受　付　1５時　　  　　　<br>
+                　　　　　挙　式　1５時３0分　　　<br>
+                　　　　　披露宴　1６時３0分　　　<br>
+                場　所　　<a href="https://www.anniversaire.co.jp/wedding/esaka/access/" target="_blank">アニヴェルセル江坂　　　</a><br>
+                </span>
+            </div>
+            </p>
+            <p>
+                <h5>アクセス</h5>
+                <div class="fade">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.120712613875!2d135.4916414!3d34.7525519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e4ff30044f2f%3A0xd92885fe00a2e3cb!2z44Ki44OL44O044Kn44Or44K744Or5rGf5Z2C!5e0!3m2!1sja!2sjp!4v1689232278454!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contents"></iframe>
+                </div>
+            </p>
+        </section>
+        <section id="formArea">
+            <h2>FORM</h2>
+            <p>
+            <div class="fade">
+            <span class="fm">
+                お手数ではございますが<br>
+                10月3日までに<br>
+                ご登録お願いいたします<br><br><br>
+            </span>
+            </div>
+            </p>
+            <p>
+            <div class="fade">
+            <span class="btn"> 
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfm5U43R28-Ten7LcAWX8O1h5TB02YP6w5lL0sENYl7VHiPYg/viewform?usp=sf_link" target="_blank">出欠登録する</a>
+            </span>
+            </div>
+            </p>
+        </section>
+        <footer>
+            <p><small>©︎ Shota and Yuka 2023</small></p>
+        </footer>
